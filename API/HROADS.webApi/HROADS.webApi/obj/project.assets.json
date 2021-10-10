@@ -7692,19 +7692,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\migue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\HROADS.webApi.csproj",
+      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Área de Trabalho\\SENAI\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\HROADS.webApi.csproj",
       "projectName": "HROADS.webApi",
-      "projectPath": "C:\\Users\\User\\Desktop\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\HROADS.webApi.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\obj\\",
+      "projectPath": "C:\\Users\\migue\\OneDrive\\Área de Trabalho\\SENAI\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\HROADS.webApi.csproj",
+      "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\migue\\OneDrive\\Área de Trabalho\\SENAI\\HROADS\\API\\HROADS.webApi\\HROADS.webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7712,8 +7712,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {

@@ -22,7 +22,7 @@ namespace HROADS.webApi.Controllers
         private IUsuariosRepository _usuarioRepository { get; set; }
 
         
-        public LoginController(LoginViewModel login)
+        public LoginController()
         {
             _usuarioRepository = new UsuarioRepository();
         }
@@ -36,8 +36,8 @@ namespace HROADS.webApi.Controllers
 
                 if (usuarioBuscado == null)
                 {
-                    return BadRequest("email ou senha incorretos");
-                };
+                    return BadRequest("E-mail ou senha inválidos!");
+                }
 
                 var minhasClaims = new[]
                 {
@@ -50,22 +50,22 @@ namespace HROADS.webApi.Controllers
 
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-                var meutoken = new JwtSecurityToken(
-                    issuer: "HROADS.webAPI",
-                    audience: "HROADS.webAPI",
-                    claims: minhasClaims,
-                    expires: DateTime.Now.AddMinutes(30),
-                    signingCredentials: creds
+                var meuToken = new JwtSecurityToken(
+                        issuer: "HROADS.webAPI",
+                        audience: "HROADS.webAPI",
+                        claims: minhasClaims,
+                        expires: DateTime.Now.AddMinutes(30),
+                        signingCredentials: creds
                     );
 
                 return Ok(new
                 {
-                    token = new JwtSecurityTokenHandler().WriteToken(meutoken)
+                    token = new JwtSecurityTokenHandler().WriteToken(meuToken)
                 });
             }
-            catch (Exception ex)
+            catch (Exception exc)
             {
-                return BadRequest(ex);
+                return BadRequest(exc);
             }
         }
     }
