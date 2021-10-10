@@ -25,7 +25,7 @@ namespace HROADS.webApi.Repositories
 
         public void Editar(Habilidade hab, int id)
         {
-            Habilidade habilidadeBuscada = ctx.Habilidades.Find(id);
+            Habilidade habilidadeBuscada = ctx.Habilidades.FirstOrDefault(s => s.IdHab == id);
 
             if (hab.NomeHabilidade != null) { habilidadeBuscada.NomeHabilidade = hab.NomeHabilidade; }
             if (hab.DescricaoHabilidade != null) { habilidadeBuscada.DescricaoHabilidade = hab.DescricaoHabilidade; }
@@ -38,7 +38,7 @@ namespace HROADS.webApi.Repositories
 
         public void Excluir(int id)
         {
-            Habilidade habilidadeBuscada = ctx.Habilidades.Find(id);
+            Habilidade habilidadeBuscada = ctx.Habilidades.FirstOrDefault(s => s.IdHab == id);
 
             ctx.Habilidades.Remove(habilidadeBuscada);
 

@@ -25,7 +25,7 @@ namespace HROADS.webApi.Repositories
 
         public void Editar(Personagem perso, int id)
         {
-            Personagem persoBuscado = ctx.Personagems.Find(id);
+            Personagem persoBuscado = ctx.Personagems.FirstOrDefault(s => s.IdPersonagem == id);
 
             if (perso.NomePersonagem != null) { persoBuscado.NomePersonagem = perso.NomePersonagem; }
             if (perso.IdClasse != 0) { persoBuscado.IdClasse = perso.IdClasse; }
@@ -40,7 +40,7 @@ namespace HROADS.webApi.Repositories
 
         public void Excluir(int id)
         {
-            Personagem persoBuscado = ctx.Personagems.Find(id);
+            Personagem persoBuscado = ctx.Personagems.FirstOrDefault(s => s.IdPersonagem == id);
 
             ctx.Personagems.Remove(persoBuscado);
 
