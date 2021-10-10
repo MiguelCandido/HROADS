@@ -18,6 +18,9 @@ namespace HROADS.webApi.Repositories
 
         public void Cadastrar(Personagem perso)
         {
+            perso.DataCriação = DateTime.Now;
+            perso.DataUpdate = DateTime.Now;
+
             ctx.Personagems.Add(perso);
 
             ctx.SaveChanges();
@@ -26,6 +29,8 @@ namespace HROADS.webApi.Repositories
         public void Editar(Personagem perso, int id)
         {
             Personagem persoBuscado = ctx.Personagems.FirstOrDefault(s => s.IdPersonagem == id);
+
+            persoBuscado.DataUpdate = DateTime.Now;
 
             if (perso.NomePersonagem != null) { persoBuscado.NomePersonagem = perso.NomePersonagem; }
             if (perso.IdClasse != 0) { persoBuscado.IdClasse = perso.IdClasse; }
