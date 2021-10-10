@@ -11,6 +11,8 @@ CREATE TABLE Classe (
 )
 GO
 
+
+
 CREATE TABLE Personagem (
 	idPersonagem tinyint primary key identity (1,1),
 	idClasse tinyint foreign key references Classe (idClasse), 
@@ -40,5 +42,20 @@ CREATE TABLE Classe_Habilidade(
 	idClasse_Habilidade tinyint primary key identity (1,1), 
 	idClasse tinyint foreign key references Classe (idClasse),
 	idHab tinyint foreign key references Habilidade (idHab)
+)
+GO
+
+
+CREATE TABLE tipoUsuario(
+	idTipoUsuario tinyint primary key identity (1,1), 
+	tipo varchar(20),
+)
+GO
+
+CREATE TABLE Usuario(
+	idUsuario tinyint primary key identity (1,1), 
+	idTipo tinyint foreign key references tipoUsuario (idTipoUsuario),
+	email varchar(50),
+	senha varchar(40)
 )
 GO
