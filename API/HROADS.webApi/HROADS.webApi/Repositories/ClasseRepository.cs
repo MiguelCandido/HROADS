@@ -25,7 +25,7 @@ namespace HROADS.webApi.Repositories
 
         public void Editar(Classe classe, int id)
         {
-            Classe classeBuscada = ctx.Classes.Find(id);
+            Classe classeBuscada = ctx.Classes.FirstOrDefault(s => s.IdClasse == id);
 
             if (classe.NomeClasse != null) { classeBuscada.NomeClasse = classe.NomeClasse; }
 
@@ -36,7 +36,7 @@ namespace HROADS.webApi.Repositories
 
         public void Excluir(int id)
         {
-            Classe classeBuscada = ctx.Classes.Find(id);
+            Classe classeBuscada = ctx.Classes.FirstOrDefault(s => s.IdClasse == id);
 
             ctx.Classes.Remove(classeBuscada);
 
