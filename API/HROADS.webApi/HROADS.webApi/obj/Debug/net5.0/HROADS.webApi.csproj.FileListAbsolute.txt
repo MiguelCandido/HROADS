@@ -56,6 +56,7 @@ C:\Users\migue\OneDrive\Área de Trabalho\SENAI\HROADS\API\HROADS.webApi\HROADS.
 C:\Users\migue\OneDrive\Área de Trabalho\SENAI\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\ref\HROADS.webApi.dll
 C:\Users\migue\OneDrive\Área de Trabalho\SENAI\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.pdb
 C:\Users\migue\OneDrive\Área de Trabalho\SENAI\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.AssemblyInfoInputs.cache
@@ -65,6 +66,8 @@ C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HR
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\ref\HROADS.webApi.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.pdb
+=======
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\appsettings.json
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\HROADS.webApi.exe
@@ -74,7 +77,18 @@ C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\HR
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\HROADS.webApi.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\ref\HROADS.webApi.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\HROADS.webApi.pdb
+<<<<<<< HEAD
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Humanizer.dll
+=======
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\HROADS.webApi.xml
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Humanizer.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -84,13 +98,27 @@ C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Mi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+<<<<<<< HEAD
+=======
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+<<<<<<< HEAD
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+=======
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -108,9 +136,26 @@ C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\ru
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+<<<<<<< HEAD
+=======
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.AssemblyInfo.cs
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.MvcApplicationPartsAssemblyInfo.cache
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\staticwebassets\HROADS.webApi.StaticWebAssets.Manifest.cache
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\staticwebassets\HROADS.webApi.StaticWebAssets.xml
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\scopedcss\bundle\HROADS.webApi.styles.css
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.RazorTargetAssemblyInfo.cache
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.csproj.CopyComplete
+<<<<<<< HEAD
+=======
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\ref\HROADS.webApi.dll
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.xml
+C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.pdb
+>>>>>>> levi
 C:\Users\User\Desktop\HROADS\API\HROADS.webApi\HROADS.webApi\obj\Debug\net5.0\HROADS.webApi.genruntimeconfig.cache
