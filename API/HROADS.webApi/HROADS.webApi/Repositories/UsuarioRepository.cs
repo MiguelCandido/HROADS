@@ -26,7 +26,7 @@ namespace HROADS.webApi.Repositories
 
         public void Editar(Usuario user, int id)
         {
-            Usuario userBuscado = ctx.Usuarios.Find(id);
+            Usuario userBuscado = ctx.Usuarios.FirstOrDefault(s => s.IdUsuario == id);
 
             if (user.Email != null) { userBuscado.Email = user.Email; }
             if (user.Senha != null) { userBuscado.Senha = user.Senha; }
@@ -39,7 +39,7 @@ namespace HROADS.webApi.Repositories
 
         public void Excluir(int id)
         {
-            Usuario userBuscado = ctx.Usuarios.Find(id);
+            Usuario userBuscado = ctx.Usuarios.FirstOrDefault(s => s.IdUsuario == id);
 
             ctx.Usuarios.Remove(userBuscado);
 

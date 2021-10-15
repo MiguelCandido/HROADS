@@ -1,4 +1,4 @@
-using HROADS.webApi.Domains;
+﻿using HROADS.webApi.Domains;
 using HROADS.webApi.Interfaces;
 using HROADS.webApi.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -13,23 +13,23 @@ namespace HROADS.webApi.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class ClassesController : ControllerBase
     {
-        private IUsuariosRepository _usuarioRepository { get; set; }
+        private IClassesRepository _classeRepository { get; set; }
 
-        public UsuariosController()
+        public ClassesController()
         {
-            _usuarioRepository = new UsuarioRepository();
+            _classeRepository = new ClasseRepository();
 
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(Usuario user)
+        public IActionResult Cadastrar(Classe classe)
         {
 
             try
             {
-                _usuarioRepository.Cadastrar(user);
+                _classeRepository.Cadastrar(classe);
 
                 return StatusCode(201);
             }
@@ -44,22 +44,22 @@ namespace HROADS.webApi.Controllers
         [HttpGet]
         public IActionResult Listar()
         {
-            List<Usuario> listaUser = _usuarioRepository.ListarTodas();
+            List<Classe> liscaClass = _classeRepository.ListarTodas();
 
-            return Ok(listaUser);
+            return Ok(liscaClass);
         }
 
-        [HttpGet("{idUser}")]
-        public IActionResult BuscarPorID(int idUser)
+        [HttpGet("{idClass}")]
+        public IActionResult BuscarPorID(int idClass)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Classe teste = _classeRepository.BuscarPorID(idClass);
                 if (teste != null)
                 {
                     return Ok(teste);
                 }
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A classe não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -69,20 +69,20 @@ namespace HROADS.webApi.Controllers
 
         }
 
-        [HttpPut("{idUser}")]
-        public IActionResult Atualizar(int idUser, Usuario usuarioUPDT)
+        [HttpPut("{idClass}")]
+        public IActionResult Atualizar(Classe classeUPDT, int idClass)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Classe teste = _classeRepository.BuscarPorID(idClass);
                 if (teste != null)
                 {
-                    _usuarioRepository.Editar(usuarioUPDT, idUser);
+                    _classeRepository.Editar(classeUPDT, idClass);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A classe não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -91,20 +91,20 @@ namespace HROADS.webApi.Controllers
             }
         }
 
-        [HttpDelete("{idUser}")]
-        public IActionResult Deletar(int idUser)
+        [HttpDelete("{idClass}")]
+        public IActionResult Deletar(int idClass)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Classe teste = _classeRepository.BuscarPorID(idClass);
                 if (teste != null)
                 {
-                    _usuarioRepository.Excluir(idUser);
+                    _classeRepository.Excluir(idClass);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A classe não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -113,6 +113,5 @@ namespace HROADS.webApi.Controllers
             }
 
         }
-
     }
 }

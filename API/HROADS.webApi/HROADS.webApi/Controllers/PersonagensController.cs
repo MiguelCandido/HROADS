@@ -1,4 +1,4 @@
-using HROADS.webApi.Domains;
+﻿using HROADS.webApi.Domains;
 using HROADS.webApi.Interfaces;
 using HROADS.webApi.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -13,23 +13,23 @@ namespace HROADS.webApi.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class PersonagensController : ControllerBase
     {
-        private IUsuariosRepository _usuarioRepository { get; set; }
+        private IPersonagensRepository _PersonagemRepository { get; set; }
 
-        public UsuariosController()
+        public PersonagensController()
         {
-            _usuarioRepository = new UsuarioRepository();
+            _PersonagemRepository = new PersonagemRepository();
 
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(Usuario user)
+        public IActionResult Cadastrar(Personagem Personagem)
         {
 
             try
             {
-                _usuarioRepository.Cadastrar(user);
+                _PersonagemRepository.Cadastrar(Personagem);
 
                 return StatusCode(201);
             }
@@ -44,22 +44,22 @@ namespace HROADS.webApi.Controllers
         [HttpGet]
         public IActionResult Listar()
         {
-            List<Usuario> listaUser = _usuarioRepository.ListarTodas();
+            List<Personagem> listaPerso = _PersonagemRepository.ListarTodas();
 
-            return Ok(listaUser);
+            return Ok(listaPerso);
         }
 
-        [HttpGet("{idUser}")]
-        public IActionResult BuscarPorID(int idUser)
+        [HttpGet("{idPerso}")]
+        public IActionResult BuscarPorID(int idPerso)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Personagem teste = _PersonagemRepository.BuscarPorID(idPerso);
                 if (teste != null)
                 {
                     return Ok(teste);
                 }
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Personagem não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -69,20 +69,20 @@ namespace HROADS.webApi.Controllers
 
         }
 
-        [HttpPut("{idUser}")]
-        public IActionResult Atualizar(int idUser, Usuario usuarioUPDT)
+        [HttpPut("{idPerso}")]
+        public IActionResult Atualizar(int idPerso, Personagem PersonagemUPDT)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Personagem teste = _PersonagemRepository.BuscarPorID(idPerso);
                 if (teste != null)
                 {
-                    _usuarioRepository.Editar(usuarioUPDT, idUser);
+                    _PersonagemRepository.Editar(PersonagemUPDT, idPerso);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Personagem não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -91,28 +91,26 @@ namespace HROADS.webApi.Controllers
             }
         }
 
-        [HttpDelete("{idUser}")]
-        public IActionResult Deletar(int idUser)
+        [HttpDelete("{idPerso}")]
+        public IActionResult Deletar(int idPerso)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Personagem teste = _PersonagemRepository.BuscarPorID(idPerso);
                 if (teste != null)
                 {
-                    _usuarioRepository.Excluir(idUser);
+                    _PersonagemRepository.Excluir(idPerso);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Personagem não foi encontrada :P");
             }
             catch (Exception erro)
             {
-
                 return BadRequest(erro);
             }
 
         }
-
     }
 }

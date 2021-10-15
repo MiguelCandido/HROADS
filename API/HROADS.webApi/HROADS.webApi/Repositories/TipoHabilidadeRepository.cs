@@ -25,7 +25,7 @@ namespace HROADS.webApi.Repositories
 
         public void Editar(TipoHabilidade tipoHab, int id)
         {
-            TipoHabilidade tipohabBuscada = ctx.TipoHabilidades.Find(id);
+            TipoHabilidade tipohabBuscada = ctx.TipoHabilidades.FirstOrDefault(s => s.IdTipoHab == id);
 
             if (tipoHab.NomeTipo != null) { tipohabBuscada.NomeTipo = tipoHab.NomeTipo; }
 
@@ -36,7 +36,7 @@ namespace HROADS.webApi.Repositories
 
         public void Excluir(int id)
         {
-            TipoHabilidade tipohabBuscada = ctx.TipoHabilidades.Find(id);
+            TipoHabilidade tipohabBuscada = ctx.TipoHabilidades.FirstOrDefault(s => s.IdTipoHab == id);
 
             ctx.TipoHabilidades.Remove(tipohabBuscada);
 

@@ -1,4 +1,4 @@
-using HROADS.webApi.Domains;
+﻿using HROADS.webApi.Domains;
 using HROADS.webApi.Interfaces;
 using HROADS.webApi.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -13,23 +13,23 @@ namespace HROADS.webApi.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class HabilidadesController : ControllerBase
     {
-        private IUsuariosRepository _usuarioRepository { get; set; }
+        private IHabilidadeRepository _HabilidadeRepository { get; set; }
 
-        public UsuariosController()
+        public HabilidadesController()
         {
-            _usuarioRepository = new UsuarioRepository();
+            _HabilidadeRepository = new HabilidadeRepository();
 
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(Usuario user)
+        public IActionResult Cadastrar(Habilidade Habilidade)
         {
 
             try
             {
-                _usuarioRepository.Cadastrar(user);
+                _HabilidadeRepository.Cadastrar(Habilidade);
 
                 return StatusCode(201);
             }
@@ -44,22 +44,22 @@ namespace HROADS.webApi.Controllers
         [HttpGet]
         public IActionResult Listar()
         {
-            List<Usuario> listaUser = _usuarioRepository.ListarTodas();
+            List<Habilidade> listahab = _HabilidadeRepository.ListarTodas();
 
-            return Ok(listaUser);
+            return Ok(listahab);
         }
 
-        [HttpGet("{idUser}")]
-        public IActionResult BuscarPorID(int idUser)
+        [HttpGet("{idHab}")]
+        public IActionResult BuscarPorID(int idHab)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Habilidade teste = _HabilidadeRepository.BuscarPorID(idHab);
                 if (teste != null)
                 {
                     return Ok(teste);
                 }
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Habilidade não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -69,20 +69,20 @@ namespace HROADS.webApi.Controllers
 
         }
 
-        [HttpPut("{idUser}")]
-        public IActionResult Atualizar(int idUser, Usuario usuarioUPDT)
+        [HttpPut("{idHab}")]
+        public IActionResult Atualizar(int idHab, Habilidade HabilidadeUPDT)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Habilidade teste = _HabilidadeRepository.BuscarPorID(idHab);
                 if (teste != null)
                 {
-                    _usuarioRepository.Editar(usuarioUPDT, idUser);
+                    _HabilidadeRepository.Editar(HabilidadeUPDT, idHab);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Habilidade não foi encontrada :P");
             }
             catch (Exception erro)
             {
@@ -91,28 +91,26 @@ namespace HROADS.webApi.Controllers
             }
         }
 
-        [HttpDelete("{idUser}")]
-        public IActionResult Deletar(int idUser)
+        [HttpDelete("{idHab}")]
+        public IActionResult Deletar(int idHab)
         {
             try
             {
-                Usuario teste = _usuarioRepository.BuscarPorID(idUser);
+                Habilidade teste = _HabilidadeRepository.BuscarPorID(idHab);
                 if (teste != null)
                 {
-                    _usuarioRepository.Excluir(idUser);
+                    _HabilidadeRepository.Excluir(idHab);
 
                     return StatusCode(204);
                 }
 
-                return NotFound("O usuario não foi encontrado :P");
+                return NotFound("A Habilidade não foi encontrada :P");
             }
             catch (Exception erro)
             {
-
                 return BadRequest(erro);
             }
 
         }
-
     }
 }
